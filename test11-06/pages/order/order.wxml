@@ -1,0 +1,44 @@
+<view class="orderBox">
+    <view class="orderTitle">
+        <view>运单列表</view>
+    </view>
+    <view class="conList" wx:if="{{orderType == true}}">
+        <view class="orderContent" wx:for="{{orderList}}" wx:key="index">
+            <view class="content1">
+                <view style="font-size:34rpx;color:#5F5F5F;" name="waybillType">{{escortList[(item.waybillType - 1)]}}</view>
+                <view style="display:flex;align-items:center;">
+                    <view style="color:#A4A4A4;font-size:28rpx;">运单状态</view>
+                    <image src="../../image/photo/right.png" style="width:22rpx;height:22rpx;margin-left:5rpx;"></image>
+                </view>
+            </view>
+            <view class="content2">
+                <view>
+                    <image src="../../image/photo/shizhong1.png" style="width:24rpx;height:24rpx;margin-right:15rpx;"></image>
+                    <view style="color:#515151;font-size:32rpx;">{{item.startTime}}</view>
+                </view>
+                <view>
+                    <view style="width:15rpx;height:15rpx;border-radius:50%;background:#63B9A4;margin-right:20rpx;"></view>
+                    <view style="color:#5A5A5A;font-size:30rpx;">{{item.startPosition}}</view>
+                </view>
+                <view>
+                    <view style="width:15rpx;height:15rpx;border-radius:50%;background:#ED965F;margin-right:20rpx;"></view>
+                    <view style="color:#5A5A5A;font-size:30rpx;">{{item.endPosition}}</view>
+                </view>
+                <view class="detailBtn">
+                    <view bindtap="toOrderDetail" data-item_key="{{index}}">详情</view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+    <view wx:elif="{{orderType == false}}" style="display:flex;align-items:center;height:900rpx;justify-content:center;">
+        <image src="../../image/photo/kongshuju.png" style="width:50rpx;height:50rpx;margin-right:20rpx;"></image>
+        <view style="color:#aaa">运单信息为空</view>
+    </view>
+    <view class="btnkefu" bindtap="callKefu">
+        <button>
+            <image style="width:45rpx;height:45rpx;margin-right:20rpx;" src="../../image/photo/kefu3.png"></image>
+            <view>联系客服</view>
+        </button>
+    </view>
+</view>

@@ -1,0 +1,56 @@
+.city_header {
+    width: 100%;
+    height: 80rpx;
+    border-bottom: 2rpx solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaa;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+header-left {
+    width: 50%;
+}
+.header-right {
+    display: flex;
+    width: 50%;
+    justify-content: space-between
+}
+.header-right>navigator>input {
+    width: 250rpx;
+}
+
+
+.currentCity {
+    width: 100%;
+    height: 100rpx;
+    border-bottom: 2rpx solid #ccc;
+    display: flex;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.cityTitle {
+    width: 100%;
+    height: 100rpx;
+    background: #F7F7F7;
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    color: #aaa;
+}
+.cityName {
+    width: 100%;
+    height: 110rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #eee;
+    
+}

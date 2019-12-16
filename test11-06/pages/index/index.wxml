@@ -1,0 +1,54 @@
+<view class="home">
+    <view class="home_nav">
+        <view class="nav_left" bindtap="toCenter">
+            <!-- <icon class="iconfont icon-wode"></icon> -->
+            <image src="../../image/photo/yonghu.png" style="width: 30rpx;height: 30rpx"></image>
+        </view>
+        <view class="nav_right">
+            <view wx:for="{{navTitleList}}" data-item-itemEscort="{{item.key}}" class='{{navKey == index ? "nav_active" : ""}}' wx:key="{{item}}" bindtap="clickone" data-item_key="{{item.key}}">{{item.name}}</view>
+        </view>
+    </view>
+
+    <view class="choiceAddr">
+        <view class="addr1">
+            <view class="addr1_inner">
+                <view style="color:#5B5B5B">下方选择您要去往的位置</view>
+                <image style="width: 35rpx; height: 35rpx;" src="../../image/photo/bottom.png"></image>
+            </view>
+        </view>
+        <view class="addr2" bindtap="toMap">
+            <view class="dian1">
+                <view style="background: #4F9D86;"></view>
+            </view>
+            <view>
+                <view style="color:#353535;font-size:31rpx;">{{boardingPosi}}</view>
+                <view style="color: #F09E72;font-size: 24rpx;">您在哪儿上车(默认为您当前的位置)</view>
+            </view>
+        </view>
+        <view class="addr3" bindtap="togoWhere">
+            <view style="margin-right: 10rpx;">
+                <view class="container">
+                    <view class="dot"></view>
+                    <view class="pulse"></view>
+                </view>
+            </view>
+            <view class="addr3_inner">
+                <view wx:if="{{distance}}" style="color:#D2B48C;font-size:32rpx;">{{whereTo}}</view>
+                <view wx:else style="color: #969696;font-size:34rpx;">您要去哪儿</view>
+            </view>
+        </view>
+    </view>
+
+
+    <view class="jieshao" wx:if="{{distance}}">
+        <view wx:for="{{shuomingList}}" wx:key="{{item.key}}">
+            <view wx:if="{{navKey == item.key}}">护送说明：{{item.content}}</view>
+        </view>
+    </view>
+    <view wx:if="{{distance}}" style="padding: 0 45rpx;color:#353535;margin-top:20rpx;font-size:28rpx;display:flex;justify-content:flex-end">
+        <text style="font-weight: bold; color: orange;">预估 {{amount}} 元</text>
+    </view>
+    <view class="callBtn" bindtap="toYuyue" wx:if="{{distance}}">
+        <button>预约用车</button>
+    </view>
+</view>

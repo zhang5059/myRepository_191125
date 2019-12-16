@@ -1,0 +1,59 @@
+.orderNum {
+    background: #eee;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    color: #aaa;
+}
+
+.content {
+    display: flex;
+    padding: 20rpx;
+    box-sizing: border-box;
+    /* border-bottom: 20rpx solid #eee; */
+    justify-content: space-between;
+}
+.conRight>button {
+    width: 200rpx;
+    height: 20rpx;
+    font-size: 24rpx;
+    line-height: 45rpx;
+    border-radius: 15rpx;
+    color: orange;
+}
+
+.outInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx;
+    border-bottom: 2rpx solid #eee;
+}
+.outInfo>view {
+    color: #505050;
+    font-size: 30rpx;
+}
+.outInfo>input {
+    text-align: right;
+    color: #2B2B2B;
+    font-size: 28rpx;
+}
+
+.butBottom {
+    margin-top: 150rpx;
+    position: fixed;
+    bottom: 10rpx;
+    left: 50%;
+    width: 100%;
+    margin-left: -50%;
+}
+.butBottom>button {
+    width: 600rpx;
+    height: 110rpx;
+    background: #07C160;
+    color: #fff;
+    border-radius: 20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+<!--pages/center/center.wxml-->
+<view>
+    <view class="center_header">
+        <view class="header_box">
+            <open-data type="userAvatarUrl"></open-data>
+            <text>{{userTelPhone}}</text>
+        </view>
+    </view>
+    <view class="content_box">
+
+        <view class="box_con1" bindtap="toxingCheng" >
+            <view class="con1_left">
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/xingcheng.png"></image>
+                <text>运单</text>
+            </view>
+            <view>
+                <image  style="width: 25rpx;height: 25rpx;" src="../../image/photo/right.png"></image>
+            </view>
+        </view>
+
+        <!-- <view class="box_con1" bindtap="tosheZhi">
+            <view class="con1_left">
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/shezhi.png"></image>
+                <text>设置</text>
+            </view>
+            <view>
+                <image  style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+            </view>
+        </view> -->
+        <view class="box_con1" bindtap="toZhinan">
+            <view class="con1_left">
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/zhinan_1.png"></image>
+                <text>用户指南</text>
+            </view>
+            <view>
+                <image  style="width: 25rpx;height: 25rpx;" src="../../image/photo/right.png"></image>
+            </view>
+        </view>
+        <view class="box_con1" bindtap="toFalv">
+            <view class="con1_left">
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/falv_1.png"></image>
+                <text>法律条款</text>
+            </view>
+            <view>
+                <image  style="width: 25rpx;height: 25rpx;" src="../../image/photo/right.png"></image>
+            </view>
+        </view>
+
+        <view class="box_con1" bindtap="callKefu">
+            <view class="con1_left">
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/kefu.png"></image>
+                <text>客服</text>
+            </view>
+            <view>
+                <image  style="width: 25rpx;height: 25rpx;" src="../../image/photo/right.png"></image>
+            </view>
+        </view>
+
+    </view>
+
+    
+    <view class="footer">
+    </view>
+</view>

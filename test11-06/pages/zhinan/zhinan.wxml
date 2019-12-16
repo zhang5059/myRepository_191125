@@ -1,0 +1,21 @@
+<view class="zhinan_box">
+    <view class="box1">
+        <view class="box1-con">
+            <view>普通护送</view>
+            <!-- <icon class="iconfont icon-dayuhao"></icon> -->
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+        <view class="box1-con">
+            <view>高级护送</view>
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+        <view class="box1-con">
+            <view>护理护送</view>
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+        <view class="box1-con">
+            <view>重症护送</view>
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+    </view>
+</view>

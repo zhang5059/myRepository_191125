@@ -1,0 +1,88 @@
+.box {
+    width: 100%;
+    height: 300rpx;
+    border-bottom: 2rpx solid #eee;
+    background: #98D0EA;
+}
+.headerInner1 {
+    padding: 40rpx;
+    font-size: 42rpx;
+    color: #fff;
+}
+.headerInner2 {
+    text-align: center;
+    font-size: 56rpx;
+    color: #fff;
+    height: 100rpx;
+}
+
+.inner {
+    display: flex;
+    border-bottom: 2rpx solid #ccc;
+    height: 120rpx;
+}
+.inner-left {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-left>image {
+
+}
+.inner-right {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+
+.duihuan {
+     width:100%;
+     margin: 0 200rpx;
+}
+
+
+.choice {
+    width: 270rpx;
+    height: 60rpx;
+    border: 2rpx solid #ccc;
+    padding: 0 20rpx;
+    margin-bottom: 10rpx;
+    line-height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rpx;
+}
+
+
+.scBtn {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    margin-top: 30rpx;
+}
+.scBtn>view {
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    
+    font-size: 28rpx;
+}
+.clearBtn {
+    background:#FAFAFA;
+    color: #9C9C9C;
+}
+.searchBtn {
+    background: #07C160;
+    color: #fff;
+
+}
+
+.searchResult {
+    width: 100%;
+    height: 100%;
+}

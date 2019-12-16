@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/userReg/userReg",
+        "pages/gowhere/gowhere",
+        "pages/order/order",
+        
+        "pages/orderDetail/orderDetail",
+        "pages/center/center",
+        "pages/yuyue/yuyue",
+        
+        "pages/geocoding/geocoding",
+        "pages/test/test",
+        "pages/city/city",
+        "pages/yuyueSuc/yuyueSuc",
+        "pages/xingcheng/xingcheng",
+        "pages/login/login",
+        "pages/map/map",
+        "pages/shezhi/shezhi",
+        "pages/logs/logs",
+        "pages/zhinan/zhinan"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "红滴护送",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "usingComponents": {
+        "van-popup": "../../dist/popup/index",
+        "van-field": "../../dist/field/index",
+        "van-picker": "../../dist/picker/index",
+        "van-notice-bar": "../../dist/notice-bar/index"
+    }
+}

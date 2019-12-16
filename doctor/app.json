@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/docReg/docReg",
+        "pages/yzTel/yzTel",
+        "pages/exchangeInte/exchangeInte",
+        
+        "pages/inteIndex/inteIndex",
+        "pages/integral/integral"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "医生",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "selectedColor": "#FFB90F",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "我的二维码",
+                "iconPath": "image/photo/erweima_1.png",
+                "selectedIconPath": "image/tabBar_update/erweima_3.png"
+            },
+            {
+                "pagePath": "pages/inteIndex/inteIndex",
+                "text": "积分",
+                "iconPath": "image/photo/jifen1_1.png",
+                "selectedIconPath": "image/tabBar_update/jifen_2.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "van-field": "../../dist/field/index",
+        "van-picker": "../../dist/picker/index",
+        "van-notice-bar": "../../dist/notice-bar/index",
+        "van-popup": "./dist/popup/index"
+    }
+}

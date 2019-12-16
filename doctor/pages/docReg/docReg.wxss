@@ -1,0 +1,104 @@
+.box {
+    margin-top: 50rpx;
+}
+.name {
+    display: flex;
+    width: 100vh;
+    padding: 20rpx;
+    margin-bottom: 10rpx;
+    font-size: 26rpx;
+}
+.inner {
+    line-height: 52rpx;
+    width: 140rpx;
+    /* text-align: right; */
+    margin-left: 10rpx;
+}
+input {
+    width: 360rpx;
+    height: 60rpx;
+    border: 2rpx solid #ccc;
+    padding: 0 20rpx;
+    margin-left: 30rpx;
+    border-radius: 5rpx;
+}
+
+.butBottom {
+    margin-top: 150rpx;
+}
+.butBottom>button {
+    width: 500rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #3F51B5; */
+    color: #fff;
+}
+
+.choice {
+    width: 360rpx;
+    height: 60rpx;
+    /* border: 2rpx solid #ccc; */
+    padding: 0 20rpx;
+    margin-left: 30rpx;
+    border-radius: 5rpx;
+    line-height: 60rpx;
+}
+
+
+.yzm {
+    padding: 20rpx 0rpx;
+    padding-right: 20rpx;
+}
+.yzm>input {
+    width: 350rpx;
+    height: 80rpx;
+    border: none;
+    border-bottom: 1rpx solid #ccc;
+    text-align: center;
+    font-size: 38rpx;
+    color: orange;
+    /* font-weight: bold; */
+}
+.yzm>view {
+    width: 250rpx;
+    height: 80rpx;
+    background: #07C160;
+    color: #fff;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    text-align: center;
+    border-radius: 10rpx;
+}
+
+
+.yzmInner {
+    width: 100%;
+    border-bottom: 1rpx solid #eee;
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0 20rpx 20rpx;
+    font-size: 28rpx;
+}
+.yzmInner>text {
+    color: #333;
+}
+.yzmInner>input {
+    border: none;
+    margin-left: 44rpx;
+    color: #999;
+    width: 330rpx;
+}
+.yzmInner>view {
+    width: 150rpx;
+    height: 60rpx;
+    /* background: #07C160; */
+    color: #999;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 10rpx;
+    font-size: 24rpx;
+    /* border: 2rpx solid #07C160; */
+}

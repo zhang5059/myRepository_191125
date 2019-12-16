@@ -1,0 +1,147 @@
+.box {
+    background: #fafbfc;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.topBox {
+    width: 95%;
+    background: #fff;
+    padding: 40rpx;
+    box-sizing: border-box;
+    box-shadow: 0 5rpx 10rpx 5rpx #eee;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    border-radius: 20rpx;
+    height: 250rpx;
+}
+
+.topBox image {
+    width: 26rpx;
+    height: 26rpx;
+    margin-right: 20rpx;
+}
+
+.boxInner {
+    height: 200rpx;
+}
+
+.boxInner>view {
+    display: flex;
+    height: 50rpx;
+    align-items: center;
+    margin-bottom: 10rpx;
+}
+
+.boxInner>button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.boxInner>view>view {
+    color: #787878;
+    font-size: 28rpx;
+}
+
+.topBox2 {
+    width: 95%;
+    background: #fff;
+    padding: 40rpx;
+    box-sizing: border-box;
+    box-shadow: 0 5rpx 10rpx 5rpx #eee;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    border-radius: 20rpx;
+    height: 750rpx;
+}
+
+.topBox2 image {
+    width: 26rpx;
+    height: 26rpx;
+    margin-right: 20rpx;
+}
+
+.boxInner2>view>view:nth-child(1) {
+    width: 250rpx;
+}
+
+.boxInner2>view>view:nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 550rpx;
+    color: rgb(116, 114, 114);
+    font-size: 28rpx;
+}
+
+.boxInner2 {
+    height: 200rpx;
+}
+
+.boxInner2>view {
+    display: flex;
+    height: 50rpx;
+    align-items: center;
+    margin-bottom: 10rpx;
+}
+.beizhu {
+    border-bottom: 2rpx solid #eee;
+}
+.boxInner2>button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.boxInner2>view>view {
+    color: #787878;
+    font-size: 28rpx;
+}
+.boxInner2>view:last-child {
+    height: 95rpx;
+}
+
+
+
+.bottomBtn {
+    width: 95%;
+    height: 100rpx;
+    box-shadow: 0 5rpx 5rpx 5rpx #eee;
+    position: fixed;
+    bottom: 20rpx;
+    display: flex;
+    justify-content: center;
+    border-radius: 20rpx;
+    align-items: center;
+    font-size: 24rpx;
+}
+
+.bottomBtn image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-bottom: 5rpx;
+}
+
+.middle {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle>view {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7f7f7f;
+}
+
+.btnLeft {
+    border-right: 2rpx solid #eee;
+}

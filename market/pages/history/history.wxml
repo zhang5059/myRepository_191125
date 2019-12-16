@@ -1,0 +1,52 @@
+<view class="box">
+    <van-collapse value="{{activeNames}}" bind:change="onChange">
+        <van-collapse-item title="筛选" name="1">
+            <view class="inpView">
+                <view style="display: flex">
+                    <view class="section">
+                        <picker mode="date" value="{{date}}" start="2019-01-01" end="2019-12-09" bindchange="bindDateChange">
+                            <view class="picker">
+                                <view class="choice">开始时间 {{date}}</view>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="section">
+                        <picker mode="date" value="{{dateEnd}}" start="2019-01-01" end="2020-01" bindchange="bindDateChange2">
+                            <view class="picker">
+                                <view class="choice">结束时间 {{dateEnd}}</view>
+                            </view>
+                        </picker>
+                    </view>
+
+                    <!-- <view class="section">
+                        <picker mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+                            <view class="picker">
+                                <view class="choice">{{time}}</view>
+                            </view>
+                        </picker>
+                    </view> -->
+                </view>
+            </view>
+            <view class="scBtn">
+                <view class="clearBtn" bindtap="clearDate">清空</view>
+                <view class="searchBtn" bindtap="search">搜索</view>
+            </view>
+        </van-collapse-item>
+    </van-collapse>
+    <view class="boxBottom" bindtap="changeActiveNames">
+        <view class="resultTitle">
+            <view>医院名称</view>
+            <view>医生姓名</view>
+            <view>金额</view>
+            <view>创建时间</view>
+        </view>
+        <scroll-view>
+            <view class="result" wx:for="{{resultList}}" wx:key="index" scroll-y="true" bindscrolltolower="bindDownLoad">
+                <view>{{item.hospName}}</view>
+                <view>{{item.docName}}</view>
+                <view>{{item.amount}}</view>
+                <view>{{item.createTime}}</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

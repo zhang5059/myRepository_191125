@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/ownReg/ownReg",
+        "pages/getVerCode/getVerCode",
+        "pages/history/history",
+        "pages/test/test",
+        "pages/docReg/docReg",
+        "pages/currentMonth/currentMonth",
+        "pages/perCenter/perCenter",
+        "pages/shouquan/shouquan"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "selectedColor": "#FFB90F",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "二维码",
+                "iconPath": "image/tabBar/erweima_1.png",
+                "selectedIconPath": "image/tabBar_update/erweima_3.png"
+            },
+            {
+                "pagePath": "pages/docReg/docReg",
+                "text": "医生注册",
+                "iconPath": "image/tabBar/zhuce2_1.png",
+                "selectedIconPath": "image/tabBar_update/reg_3.png"
+            },
+            {
+                "pagePath": "pages/perCenter/perCenter",
+                "text": "个人中心",
+                "iconPath": "image/tabBar/zhongxin1_1.png",
+                "selectedIconPath": "image/tabBar_update/center_3.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "van-field": "../../dist/field/index",
+        "van-picker": "../../dist/picker/index",
+        "van-notice-bar": "../../dist/notice-bar/index"
+    }
+}

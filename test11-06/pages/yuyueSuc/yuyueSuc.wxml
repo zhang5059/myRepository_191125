@@ -1,0 +1,88 @@
+<view>
+    <view class="orderNum">订单状态</view>
+    <view class="outInfo" style="display: flex; justify-content: center">
+        <view>待支付</view>
+    </view>
+    <view class="orderNum">预约中</view>
+    <view class="box">
+        <view class="outInfo">
+            <view>订单编号</view>
+            <input placeholder="请输入联系人姓名" value="1203052050591" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>联系人姓名</view>
+            <input placeholder="请输入联系人姓名" value="{{name}}" disabled="disabled"></input>
+        </view>
+        <!-- <view class="outInfo">
+            <view>年龄</view>
+            <input value="{{age}}" placeholder="请输入年龄" disabled="disabled"></input>
+        </view> -->
+        <view class="outInfo">
+            <view>联系方式</view>
+            <input placeholder="请输入联系方式" disabled="disabled" value="{{telPhone}}"></input>
+        </view>
+        <view class="outInfo">
+            <view>上车位置</view>
+            <!-- <view>{{boardingPosi}}</view> -->
+            <input value="{{boardingPosi}}" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>终点位置</view>
+            <!-- <view>{{whereTo}}</view> -->
+            <input value="{{whereTo}}" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>用车日期</view>
+            <view class="section">
+                <picker mode="date" value="{{date}}" start="2000-01" end="2030-01" bindchange="bindDateChange">
+                    <view class="picker">
+                        {{date}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="outInfo">
+            <view>用车时间</view>
+            <view class="section">
+                <picker mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+                    <view class="picker">
+                        {{time}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="outInfo">
+            <view>病情</view>
+            <view class="section">
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                        {{array[index]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="outInfo">
+            <view>护送模式</view>
+            <view class="section">
+                <picker bindchange="bindPickerChange2" value="{{index1}}" range="{{escortList}}">
+                    <view class="picker">
+                        {{escortList[index1]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="outInfo">
+            <view>预估价</view>
+            <view>1200元</view>
+        </view>
+        <!-- <view class="outInfo">
+            <view>留言</view>
+            <view class="section">
+                <textarea style="width: 400rpx;text-align:right" bindblur="bindTextAreaBlur" auto-height placeholder="请输入留言内容" />
+            </view>
+        </view> -->
+    </view>
+    <view class="yysBottom">
+        <button bindtap="cancalOrder">取消订单</button>
+    </view>
+</view>

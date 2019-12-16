@@ -1,0 +1,41 @@
+<view>
+
+    <view class="city_header">
+        <input placeholder="城市中文名或拼音" bindinput="searchCity"></input>
+        <view class="header-right">
+            <navigator open-type='navigateBack'>
+                <input placeholder="您在哪儿上车"></input>
+            </navigator>
+
+            <view bindtap="toBack">取消</view>
+        </view>
+    </view>
+
+
+    <view wx:if="{{cityContent != []}}">
+        <view class="currentCity">
+            <view>当前城市：{{cityCurrent}}</view>
+        </view>
+        <view wx:for="{{tempList}}" wx:key="{{item.title}}" v-if="{{tempList.content == []}}">
+            <view class="cityTitle" v-if="{{item.title != ''}}">{{item.title}}</view>
+            <view class="cityName" wx:for="{{item.content}}" wx:key="{{item.id}}" bindtap="togecoding" data-item_choiceCity="{{item.nm}}">
+                {{item.nm}}
+            </view>
+        </view>
+    
+        <view wx:for="{{lettarArr}}" wx:key="{{item.title}}" v-else> 
+            <view class="cityTitle">{{item.title}}</view>
+            <view class="cityName" wx:for="{{item.content}}" wx:key="{{item.id}}" bindtap="togecoding" data-item_choiceCity="{{item.nm}}">
+                {{item.nm}}
+            </view>
+        </view>
+        
+    </view>
+
+    <!-- <view wx:else>
+        <view wx:for="{{cityContent}}">
+            {{item}}
+        </view>
+    </view> -->
+
+</view>

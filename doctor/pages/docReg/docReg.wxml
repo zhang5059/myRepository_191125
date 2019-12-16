@@ -1,0 +1,61 @@
+<view>
+    <view class="box">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <van-field value="{{name}}" label="姓名" bind:blur="yzName" placeholder="请输入姓名" focus="{{focusType}}" error-message="{{errorName}}" border="{{ false }}" />
+            <van-field value="{{telPhone}}" label="联系方式" bind:blur="yzTel" placeholder="请输入手机号" error-message="{{errorTel}}" border="{{ false }}" />
+            <view class="name">
+                <view class="inner">医院名称</view>
+                <view class="section">
+                    <picker bindchange="bindHospital" value="{{hosNum}}" range="{{hosList}}">
+                        <view class="picker">
+                            <view class="choice">{{hosList[hosNum]}}</view>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="name">
+                <view class="inner">科室</view>
+                <view class="section">
+                    <picker bindchange="bindDepartment" value="{{depNum}}" range="{{depList}}">
+                        <view class="picker">
+                            <view class="choice" >{{depList[depNum]}}</view>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="name">
+                <view class="inner">医生职位</view>
+                <view class="section">
+                    <picker bindchange="bindZhiwei" value="{{docNum}}" range="{{docList}}">
+                        <view class="picker">
+                            <view class="choice">{{docList[docNum]}}</view>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <van-field value="{{addr}}" label="住址" bind:blur="yzAddr" placeholder="请输入住址" border="{{ false }}" />
+            <view class="name">
+                <view class="inner">二维码</view>
+                <view class="section">
+                    <picker bindchange="bindQrCode" value="{{qrNum}}" range="{{getqrCodeList}}">
+                        <view class="picker">
+                            <view class="choice">{{getqrCodeList[qrNum]}}</view>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="yzmBox">
+                <view class="yzmInner">
+                    <image style="width: 30rpx;height:30rpx;margin-right:10rpx;margin-left:6rpx;" src="../../image/photo/yanzhengma3.png"></image>
+                    <text>验证码</text>
+                    <input placeholder="请输入验证码" maxlength="4" bindinput="inputyz" value="{{validateCode}}"></input>
+                    <view style="border: 2rpx solid #07C160;" bindtap="getVerCode" wx:if="{{yzType == false}}"><text>获取验证码</text></view>
+                    <view style="border: 2rpx solid #ACE4C2;" wx:else><text>请稍候({{yzNum}})</text></view>
+                </view>
+            </view>
+            <view class="butBottom">
+                <button formType="submit" type="primary">注册</button>
+            </view>
+        </form>
+    </view>
+</view>

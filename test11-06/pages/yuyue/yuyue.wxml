@@ -1,0 +1,90 @@
+<view>
+    <view class="orderNum">基本信息</view>
+    <view>
+        <view class="outInfo">
+            <view>联系人姓名</view>
+            <input placeholder="请输入联系人姓名" value="{{name}}" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>联系方式</view>
+            <input placeholder="请输入联系方式" value="{{telPhone}}" disabled="disabled" bindinput="telPhone"></input>
+        </view>
+        <view class="outInfo">
+            <view>预约日期</view>
+            <view class="section">
+                <picker mode="date" value="{{date}}" start="2000-01" end="2030-01" bindchange="bindDateChange">
+                    <view class="picker">
+                        {{date}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="outInfo">
+            <view>预约时间</view>
+            <view class="section">
+                <picker mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+                    <view class="picker">
+                        {{time}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="outInfo">
+            <view>起始位置</view>
+            <!-- <view>{{boardingPosi}}</view> -->
+            <input value="{{startPosition}}" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>结束位置</view>
+            <!-- <view>{{whereTo}}</view> -->
+            <input value="{{endPosition}}" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>公里数</view>
+            <input value="{{mileage}}公里" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>预估价</view>
+            <input value="{{amount}}元" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>运单类型</view>
+            <input value="{{escortList[waybillType - 1]}}" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>用车类型</view>
+            <input value="普通用车" disabled="disabled"></input>
+        </view>
+        <view class="outInfo">
+            <view>备注</view>
+            <view class="section">
+                <textarea style="width: 400rpx;text-align:right" value="{{mark}}"  bindblur='bindTextAreaBlur' auto-height placeholder="请输入留言内容" />
+            </view>
+        </view>
+        <!-- <view class="outInfo">
+            <view>选择病情</view>
+            <view class="section">
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                    <view class="picker">
+                        {{array[index]}}
+                    </view>
+                </picker>
+            </view>
+        </view> -->
+        <!-- <view class="outInfo">
+            <view>选择护送模式</view>
+            <view class="section">
+                <picker bindchange="bindPickerChange2" value="{{index1}}" range="{{escortList}}">
+                    <view class="picker">
+                        {{escortList[index1]}}
+                    </view>
+                </picker>
+            </view>
+        </view> -->
+
+
+    </view>
+    <view class="butBottom">
+        <button bindtap="yuyueSuccess">确认预约</button>
+    </view>
+</view>

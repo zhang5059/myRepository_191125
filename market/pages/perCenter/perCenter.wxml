@@ -1,0 +1,38 @@
+<!--pages/center/center.wxml-->
+<view>
+    <view class="center_header">
+        <view class="header_box">
+            <open-data type="userAvatarUrl"></open-data>
+            <text>{{nickName}}</text>
+        </view>
+    </view>
+
+
+    <view class="content_box">
+
+        <!-- <view class="box_con1" bindtap="toxingCheng" bindtap="toCurrentMonth">
+            <view class="con1_left">
+                <image style="width: 50rpx;height: 50rpx;" src="../../image/dD.png"></image>
+                <text>本月下单信息</text>
+            </view>
+            <view>
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/right.png"></image>
+            </view>
+        </view> -->
+
+        <view class="box_con1" bindtap="tosheZhi" bindtap="toHistory">
+            <view class="con1_left">
+                <image style="width: 50rpx;height: 50rpx;" src="../../image/hisDD.png"></image>
+                <text>运单信息</text>
+            </view>
+            <view>
+                <image style="width: 30rpx;height: 30rpx;" src="../../image/right.png"></image>
+            </view>
+        </view>
+
+    </view>
+
+    
+    <view class="footer">
+    </view>
+</view>

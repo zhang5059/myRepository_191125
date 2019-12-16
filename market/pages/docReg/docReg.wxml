@@ -1,0 +1,77 @@
+<view>
+    <view class="box">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <!-- <view class="name">
+                <view class="inner">姓名</view>
+                <input placeholder="请输入姓名" error-message="错粗"></input>
+            </view> -->
+            <van-field value="{{name}}" label="姓名" bind:blur="yzName" placeholder="请输入姓名" error-message="{{errorName}}" border="{{ true }}" />
+            <!-- <view class="name">
+                <view class="inner">性别</view>
+                <view class="section">
+                    <picker bindchange="bindSex" value="{{sexIndex}}" range="{{sexList}}">
+                        <view class="picker">
+                            <view class="choice">{{sexList[sexIndex]}}</view>
+                        </view>
+                    </picker>
+                </view>
+            </view> -->
+            <!-- <view class="name">
+                <view class="inner">联系方式</view>
+                <input placeholder="请输入联系方式"></input>
+            </view> -->
+            <van-field value="{{telPhone}}" label="联系方式" bind:blur="yzTel" placeholder="请输入手机号" error-message="{{errorTel}}" border="{{ false }}" />
+            <!-- <view class="name">
+                <view class="inner">医院名称</view>
+                <input placeholder="请输入医院名称"></input>
+            </view> -->
+            <view class="name">
+                <view class="inner">医院名称</view>
+                <view class="section">
+                    <picker bindchange="bindHospital" value="{{hosNum}}" range="{{hosList}}">
+                        <view class="picker">
+                            <view class="choice">{{hosList[hosNum]}}</view>
+                            <!-- <input placeholder="请选择性别" value="{{sexList[index]}}"></input> -->
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="name">
+                <view class="inner">科室</view>
+                <view class="section">
+                    <picker bindchange="bindDepartment" value="{{depNum}}" range="{{depList}}">
+                        <view class="picker">
+                            <view class="choice" >{{depList[depNum]}}</view>
+                            <!-- <input placeholder="请选择性别" value="{{sexList[index]}}"></input> -->
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="name">
+                <view class="inner">医生职位</view>
+                <view class="section">
+                    <picker bindchange="bindZhiwei" value="{{docNum}}" range="{{docList}}">
+                        <view class="picker">
+                            <view class="choice">{{docList[docNum]}}</view>
+                            <!-- <input placeholder="请选择性别" value="{{sexList[index]}}"></input> -->
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <van-field value="{{addr}}" label="住址" bind:blur="yzAddr" placeholder="请输入住址" border="{{ true }}" />
+            <view class="name">
+                <view class="inner">二维码</view>
+                <view class="section">
+                    <picker bindchange="bindQrCode" value="{{qrNum}}" range="{{getqrCodeList}}">
+                        <view class="picker">
+                            <view class="choice">{{getqrCodeList[qrNum]}}</view>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="butBottom">
+                <button formType="submit" type="primary">注册</button>
+            </view>
+        </form>
+    </view>
+</view>

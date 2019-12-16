@@ -1,0 +1,48 @@
+.box {
+    margin-top: 50rpx;
+}
+.name {
+    display: flex;
+    width: 100vh;
+    padding: 20rpx;
+    margin-bottom: 10rpx;
+    font-size: 26rpx;
+}
+.inner {
+    line-height: 52rpx;
+    width: 140rpx;
+    /* text-align: right; */
+    margin-left: 10rpx;
+}
+input {
+    width: 360rpx;
+    height: 60rpx;
+    border: 2rpx solid #ccc;
+    padding: 0 20rpx;
+    margin-left: 30rpx;
+    border-radius: 5rpx;
+}
+
+.butBottom {
+    margin-top: 150rpx;
+}
+.butBottom>button {
+    width: 500rpx;
+    height: 90rpx;
+    border-radius: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #76D672; */
+    color: #fff;
+}
+
+.choice {
+    width: 360rpx;
+    height: 60rpx;
+    /* border: 2rpx solid #ccc; */
+    padding: 0 20rpx;
+    margin-left: 30rpx;
+    border-radius: 5rpx;
+    line-height: 60rpx;
+}

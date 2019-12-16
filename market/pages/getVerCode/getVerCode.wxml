@@ -1,0 +1,10 @@
+<view class="yzBox">
+    <!-- <input type="text" class="test" maxlength="2" value="{{inputVal1}}" bindinput="bindVal"></input>
+    <input type="text" class="test" maxlength="1" value="{{inputVal2}}"  focus="{{focusType}}"></input>
+    <input type="text" class="test" maxlength="1" value="{{inputVal3}}" ></input>
+    <input type="text" class="test" maxlength="1"  value="{{inputVal4}}" ></input> -->
+    <block wx:for="{{inputLength}}" wx:key="index">
+        <input class='iptbox' value="{{inputVal[index]}}" focus="{{focusList[index]}}" bindinput="bindVal" data-item_index="{{index}}"></input>
+    </block>
+</view>
+

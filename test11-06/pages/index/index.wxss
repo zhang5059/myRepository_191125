@@ -1,0 +1,319 @@
+.home_nav {
+    display: flex;
+    height: 100rpx;
+    box-shadow: 0px 15px 10px -15px #eee;
+}
+
+.nav_right>view {
+    font-size: 32rpx;
+}
+
+.nav_left {
+    width: 15%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_left>icon {
+    width: 60rpx;
+    height: 20rpx;
+    margin-top: 12rpx;
+    margin-left: 40rpx;
+}
+
+.nav_right {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #5D5D5D;
+}
+
+.nav_active {
+    color: #EF8E5B;
+    /* font-weight: bold; */
+}
+
+.home_content {
+    margin-top: 10rpx;
+}
+
+.outside_box {
+    width: 660rpx;
+    height: 300rpx;
+    border-radius: 20rpx;
+    margin: 10rpx auto;
+    padding: 20rpx;
+    background: #fff;
+    /* border: 2rpx solid #ccc; */
+    margin-top: 30rpx;
+    box-shadow: 0 5rpx 20rpx 5rpx #ccc;
+}
+
+.outside_box>view:first-child {
+    border-bottom: 2rpx solid #ccc;
+    height: 30%;
+    line-height: 75rpx;
+    font-size: 28rpx;
+    color: rgb(56, 51, 51);
+}
+
+.outside_box>view:nth-of-type(2) {
+    height: 35%;
+    border-bottom: 2rpx solid #ccc;
+}
+
+.con2 {
+    /* width: 20% */
+}
+
+.box-content2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.con2>text {
+    display: inline-block;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 10rpx;
+    background: #ff4040;
+}
+
+.con2 {
+    margin-right: 10rpx;
+}
+
+.con3 {
+    width: 90%;
+}
+
+.home_content {
+    font-size: 28rpx;
+}
+
+.box-content3 {
+    display: flex;
+    align-items: center;
+    line-height: 100rpx;
+}
+
+.yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    border: 2rpx solid orange;
+    background: orange;
+    margin-left: 5rpx;
+}
+
+.choice_car {
+    width: 100%;
+    display: flex;
+    margin-top: 50rpx;
+    justify-content: space-around;
+}
+
+.choice_car>view {
+    text-align: center;
+    /* border: 2rpx solid #ccc; */
+    width: 200rpx;
+    height: 200rpx;
+    line-height: 100rpx;
+    border-radius: 10rpx;
+}
+
+.car_active {
+    box-shadow: 0 15px 10px 1px #ccc;
+    color: #ff4040;
+    /* background: rgb(207, 139, 12) */
+}
+
+.choice_car>view>view {
+    /* font-weight: bold; */
+    font-size: 38rpx;
+}
+
+.choice_car>view>icon {
+    font-size: 70rpx;
+}
+
+.jieshao {
+    margin-top: 20rpx;
+    padding: 0 45rpx;
+    color: #aaa;
+}
+
+.callBtn {
+    margin-top: 100rpx;
+}
+
+.callBtn>button {
+    width: 600rpx;
+    height: 110rpx;
+    background: #07C160;
+    color: #fff;
+    border-radius: 20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.queren {
+    width: 100%;
+    height: 800rpx;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    border: 2rpx solid #ccc;
+    background: #fff;
+}
+
+/*
+    拷贝
+*/
+@keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+@-webkit-keyframes warn {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+.container {
+    position: relative;
+    width: 30rpx;
+    height: 30rpx;
+}
+/* 保持大小不变的小圆圈  */
+.dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 3px;
+    top: 3px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    z-index: 2;
+}
+/* 产生动画（向外扩散变大）的圆圈  */
+.pulse {
+    position: absolute;
+    width: 24px; 
+    height: 24px;
+    left: -10px;
+    top: -10px;
+    border: 6px solid red;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: warn 3s ease-out;
+    -moz-animation: warn 3s ease-out;
+    animation: warn 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+
+/*更改样式*/
+.choiceAddr {
+    width: 660rpx;
+    height: 400rpx;
+    border: 1rpx solid #eee;
+    margin: 60rpx auto;
+    box-shadow: 0 5rpx 20rpx 5rpx #eee;
+    border-radius: 20rpx;
+    font-size: 28rpx;
+}
+.addr1 {
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2rpx solid #eee;
+    height: 33%;
+    box-sizing: border-box;
+    margin-left: 40rpx;
+}
+.addr1_inner {
+    display: flex;
+    align-items: center;
+}
+.addr1_inner>view {
+    margin-right: 10rpx;
+}
+.addr2 {
+    width: 94%;
+    display: flex;
+    border-bottom: 2rpx solid #eee;
+    height: 33%;
+    box-sizing: border-box;
+    margin-left: 40rpx;
+    align-items: center;
+}
+.dian1 {
+    width: 30rpx;
+}
+.dian1>view {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: red;
+}
+.addr3 {
+    width: 94%;
+    display: flex;
+    height: 33%;
+    box-sizing: border-box;
+    margin-left: 30rpx;
+    align-items: center;
+}
+.addr3_inner {
+    display: flex;
+}

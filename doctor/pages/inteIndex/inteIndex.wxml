@@ -1,0 +1,19 @@
+<view>
+    <view class="box_top">
+        <view bindtap="toIntegral">积分明细</view>
+    </view>
+    <view class="jifenIcon">
+        <image src="../../image/photo/bigjifen3.png"></image>
+    </view>
+    <view class="jifenTitle">
+        <view>我的积分</view>
+    </view>
+    <view class="jifenNum">
+        <view>{{integralSum}}</view>
+    </view>
+    <view class="bottomBtn" bindtap="toExchange">
+        <view>兑换</view>
+    </view>
+
+    
+</view>

@@ -1,0 +1,31 @@
+/* pages/shezhi/shezhi.wxss */
+.box1 {
+    width: 100%;
+    height: 300rpx;
+    border-top: 20rpx solid #FAFAFA;
+    border-bottom: 20rpx solid #FAFAFA;
+    
+}
+.box1-con {
+    height: 33%;
+    border-bottom: 1rpx solid #eee;
+    display: flex;
+    align-items: center;
+    margin: 0 20rpx;
+    color: rgb(126, 121, 121);
+    justify-content: space-between
+}
+.box1-con:last-child {
+    border-bottom: none;
+}
+
+.logout {
+    height: 100rpx;
+    color: rgb(240, 172, 121);
+    text-align: center;
+    line-height: 100rpx;
+}
+.footer {
+    height: 760rpx;
+    background: #FAFAFA
+}

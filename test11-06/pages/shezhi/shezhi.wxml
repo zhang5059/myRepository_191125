@@ -1,0 +1,30 @@
+<!--pages/shezhi/shezhi.wxml-->
+<view class="shezhi_box">
+    
+    
+    <view class="box1">
+        <view class="box1-con">
+            <view>密码设置</view>
+            <!-- <icon class="iconfont icon-dayuhao"></icon> -->
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+        <view class="box1-con" bindtap="tozhinan">
+            <view>用户指南</view>
+            <!-- <icon class="iconfont icon-dayuhao"></icon> -->
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+        <view class="box1-con">
+            <view>法律条款</view>
+            <!-- <icon class="iconfont icon-dayuhao"></icon> -->
+            <image style="width: 30rpx;height: 30rpx;" src="../../image/photo/right.png"></image>
+        </view>
+    </view>
+
+
+
+
+    <view class="logout">
+        <text>退出登录</text>
+    </view>
+    <view class="footer"></view>
+</view>

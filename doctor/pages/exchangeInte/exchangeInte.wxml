@@ -1,0 +1,16 @@
+<view class="box">
+    <view class="boxContent">
+        <view style="font-weight: bold">兑换积分</view>
+        <input type="number" focus="{{inputFocus}}" style="border-bottom: 2rpx solid #ccc;" value="{{integralSum2}}" bindinput="inteInput"></input>
+        <view wx:if="{{yue}}">
+            <text>积分余额为{{integralSum}}</text>，<text style="color: #627196" bindtap="quanbu">全部兑换</text>
+        </view>
+        <view wx:else>
+            <text style="color: #E28B86">输入额度超过积分余额</text>
+        </view>
+        <view class="bottomBut">
+            <view wx:if="{{butType}}" style="background: #07C160;color:#fff" bindtap="exchangeInte">兑换</view>
+            <view wx:else style="background: #ACE4C2;color:#fff">兑换</view>
+        </view>
+    </view>
+</view>

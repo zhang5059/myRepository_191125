@@ -1,0 +1,11 @@
+/* pages/xingcheng/xingcheng.wxss */
+.xingcheng_body {
+    background: #FAFAFA;
+    width: 100%;
+    height: 1100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(190, 186, 186);
+}
+

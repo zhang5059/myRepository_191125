@@ -1,0 +1,25 @@
+<view>
+    <view class="box">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <van-field value="{{name}}" focus="{{inputShowed}}" label="姓名" bind:blur="yzName" placeholder="请输入姓名" error-message="{{errorName}}" border="{{ false }}" />
+            <van-field value="{{telPhone}}" label="联系方式" bind:blur="yzTel" placeholder="请输入手机号" error-message="{{errorTel}}" border="{{ false }}" border="{{ false }}"/>
+            <!-- <view style="display:flex;justify-content:space-between;align-items:center;" class="yzm">
+                <input placeholder="请获取短信验证码" bindinput="inputyz" value="{{validateCode}}"></input>
+                <view bindtap="getVerCode" wx:if="{{yzType == false}}"><text>获取短信验证码</text></view>
+                <view style="background: #ACE4C2;color:#fff" wx:else><text>请稍候({{yzNum}})</text></view>
+            </view> -->
+            <view class="yzmBox">
+                <view class="yzmInner">
+                    <image style="width: 30rpx;height:30rpx;margin-right:10rpx;margin-left:6rpx;" src="../../image/photo/yanzhengma3.png"></image>
+                    <text>验证码</text>
+                    <input placeholder="请输入验证码" maxlength="4" bindinput="inputyz" value="{{validateCode}}"></input>
+                    <view style="border: 2rpx solid #07C160;" bindtap="getVerCode" wx:if="{{yzType == false}}"><text>获取验证码</text></view>
+                    <view style="border: 2rpx solid #ACE4C2;" wx:else><text>请稍候({{yzNum}})</text></view>
+                </view>
+            </view>
+            <view class="butBottom">
+                <button bindgetuserinfo="getUserInfo" open-type="getUserInfo" type="primary">注册</button>
+            </view>
+        </form>
+    </view>
+</view>

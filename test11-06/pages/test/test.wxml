@@ -1,0 +1,4 @@
+<view class="container">
+    <view class="dot"></view>
+    <view class="pulse"></view>
+</view>

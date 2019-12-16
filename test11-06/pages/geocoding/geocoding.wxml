@@ -1,0 +1,59 @@
+<view class="map_container">
+
+    <view class="searchBox">
+        <!-- <input class="fromPosi" placeholder="您在哪儿上车" bindinput="getsuggest" value="{{backfill}}"></input> -->
+        <view class="sousuo">
+            <view class="sousuoInner">
+                <view class="sousuoLeft" bindtap="toCity">
+                    <view style="margin-right:10rpx;color:#5C5C5C;">{{currentCity}}</view>
+                    <image src="../../image/photo/down.png" style="width: 26rpx;height:26rpx;margin-top:5rpx;"></image>
+                </view>
+                <view class="sousuoRight">
+                    <input style="width: 400rpx;color:#060606" placeholder="您在哪儿上车" bindtap="displaySearch" bindinput="getsuggest" value="{{backfill}}"></input>
+                    <view bindtap="cancelSearch" style="color:#626262;">取消</view>
+                </view>
+            </view>
+        </view>
+
+        <view wx:if="{{mapType}}">
+            <!-- <view class="sousuoResult">
+                <view wx:for="{{suggestion}}" wx:key="index">
+                    <view wx:if="{{tipsType}}">
+                        <view class="reaultTitle" style="text-align:left;margin-left: 130rpx;" bindtap="backfill" >{{item.title}}</view>
+                        <view style="font-size:12px;color:#666;text-align:left;margin-left: 130rpx;" bindtap="backfill">{{item.addr}}</view>
+                    </view>
+                </view>
+            </view> -->
+            <map id="myMap" markers="{{markers}}" style="width:100%;height:1400rpx;" longitude="{{longitude}}" scale='14' latitude="{{latitude}}" show-location></map>
+            <view class="tishi">
+                <view class="tishiInner1">
+                    <view class="tishidian"></view>
+                    <view>{{currentPosition}}</view>
+                </view>
+                <view class="tishiInner2" wx:if="{{positionType}}">
+                    <view>为您推荐附近的最佳上车点</view>
+                </view>
+            </view>
+            <view class="bottomBtn" bindtap="backtoIndex">
+                <!-- <button >确认上车点</button> -->
+                确认上车点
+            </view>
+        </view>
+        <view wx:else>
+            <view class="sousuoResult" wx:if="{{tipsType}}">
+                <view wx:for="{{suggestion}}" wx:key="index" class="resultBox" id="{{index}}" bindtap="backfill">
+                    <view style="margin-right: 20rpx;">
+                        <image src="../../image/photo/biaoji6.png" style="width:25rpx;height:25rpx;"></image>
+                    </view>
+                    <view style="resultContent">
+                        <view style="color:#282828;margin-bottom:10rpx;">{{item.title}}</view>
+                        <view style="color:#aaa;font-size:28rpx;">{{item.addr}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+
+</view>

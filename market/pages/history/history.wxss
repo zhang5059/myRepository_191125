@@ -1,0 +1,124 @@
+.box {
+    width: 100%;
+    height: 100%;
+    border: 2rpx solid #ccc;
+    position: absolute;
+}
+
+.title {
+    width: 100%;
+    height: 30rpx;
+    background: #eee;
+    line-height: 30rpx;
+    padding: 20rpx;
+    color: #fff;
+    font-weight: bold;
+}
+
+.search {
+    height: 200rpx;
+    border-bottom: 2rpx solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20rpx;
+}
+input {
+    width: 500rpx;
+    height: 60rpx;
+    border: 2rpx solid #ccc;
+    padding: 0 20rpx;
+    margin-bottom: 10rpx;
+}
+.search>button {
+    width: 360rpx;
+    height: 30rpx;
+    font-size: 26rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8BC34A;
+    color: #fff;
+}
+.searchBut {
+    margin-top: 40rpx;
+    width: 80rpx;
+    height: 60rpx;
+    background: #8BC34A;
+    color: #fff;
+}
+.inpView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultTitle {
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 25rpx 0;
+    /* font-weight: bold; */
+    border-bottom: 2rpx solid #ddd;
+    text-align: center;
+}
+.resultTitle>view {
+    width: 25%;
+    hieght: 96rpx;
+}
+
+.result {
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 30rpx 0;
+    border-bottom: 1rpx solid #ddd;
+    font-size: 24rpx;
+    text-align: center;
+}
+.result>view {
+    width: 25%;
+}
+
+.choice {
+    width: 270rpx;
+    height: 60rpx;
+    border: 2rpx solid #ccc;
+    padding: 0 20rpx;
+    margin-bottom: 10rpx;
+    line-height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rpx;
+}
+
+
+.scBtn {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    margin-top: 30rpx;
+}
+.scBtn>view {
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    
+    font-size: 28rpx;
+}
+.clearBtn {
+    background:#FAFAFA;
+    color: #9C9C9C;
+}
+.searchBtn {
+    background: #07C160;
+    color: #fff;
+
+}
+
+
+.boxBottom {
+    width: 100%;
+    height: 100%;
+}

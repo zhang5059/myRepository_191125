@@ -1,0 +1,13 @@
+<view>
+    <view class="zhezao" hidden="{{flag}}">
+        <view class="t_w">
+            <view class="tanchu_view">
+                <van-field value="{{telPhone}}" focus="{{focusType}}" label="联系方式" bind:blur="yzTel" placeholder="请输入手机号" error-message="{{errorTel}}" border="{{ true }}" />
+                <button style="margin-top: 80rpx;color:#fff"  bindgetuserinfo="getUserInfo" open-type="getUserInfo"  type="primary">下一步</button>
+            </view>
+            
+        </view>
+    </view>
+</view>
+
+<!-- <view bindtap="show">点我显示</view> -->

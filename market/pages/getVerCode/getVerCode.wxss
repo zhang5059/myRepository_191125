@@ -1,0 +1,10 @@
+.yzBox {
+    display: flex;
+    justify-content: space-around;
+}
+.yzBox>input {
+    width: 80rpx;
+    height: 70rpx;
+    border: 2rpx solid #ccc;
+    text-align: center;
+}

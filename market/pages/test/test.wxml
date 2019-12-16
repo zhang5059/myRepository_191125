@@ -1,0 +1,6 @@
+<view class="box">
+    <view wx:for="{{qcsList}}" wx:key="index">
+        <image src="{{item.over_image_url}}"></image>
+    </view>
+    <button bindtap="toElse"></button>
+</view>

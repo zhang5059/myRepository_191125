@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view>
+    <view class="box">
+        <image src="{{qrCode}}"></image>
+    </view>
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权获取头像昵称 </button> -->
+    <!-- <button bindtap="toElse">跳转</button> -->
+</view>

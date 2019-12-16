@@ -1,0 +1,82 @@
+<view class="box">
+    
+    <view class="topBox">
+        <view class="boxInner">
+            <view>
+                <image src="../../image/photo/shizhong.png"></image>
+                <view>2019-12-11</view>
+            </view>
+            <view>
+                <image src="../../image/photo/shiji.png"></image>
+                <view>张师傅</view>
+            </view>
+            <view bindtap="callSiji">
+                <image src="../../image/photo/dianhua.png"></image>
+                <view>15889873140</view>
+            </view>
+        </view>
+    </view>
+    <view class="topBox2">
+        <view class="boxInner2">
+            <view>
+                <view>您的姓名</view>
+                <view>{{detailList.name}}</view>
+            </view>
+            <view>
+                <view>联系方式</view>
+                <view>{{detailList.telPhone}}</view>
+            </view>
+            <view>
+                <view>预约时间</view>
+                <view>{{startTiem}}</view>
+            </view>
+            <view>
+                <view>起始位置</view>
+                <view>{{detailList.startPosition}}</view>
+            </view>
+            <view>
+                <view >结束位置</view>
+                <view>{{detailList.endPosition}}</view>
+            </view>
+            <view>
+                <view>公里数</view>
+                <view>{{detailList.mileage}}公里</view>
+            </view>
+            <view>
+                <view>用车价格</view>
+                <view>{{detailList.amount}}元</view>
+            </view>
+            <view>
+                <view>运单类型</view>
+                <view>{{waybillType}}</view>
+            </view>
+            <view>
+                <view>用车类型</view>
+                <view>普通用车</view>
+            </view>
+            <view class="beizhu">
+                <view>备注</view>
+                <view>{{detailList.mark}}</view>
+            </view>
+            <view>
+                <view>订单状态</view>
+                <view style="font-size: 42rpx;color:orange">{{orderStateList[state - 1]}}</view>
+            </view>
+            
+        </view>
+    </view>
+    <view style="display: flex;justify-content:center;">
+        <view class="bottomBtn">
+            <view class="middle">
+                <view class="btnLeft"  bindtap="callKefu">
+                    <image src="../../image/photo/kefu1-1.png"></image>
+                    <view>呼叫客服</view>
+                </view>
+                <view class="btnRight" bindtap="returnIndex">
+                    <image src="../../image/photo/shouye1-1.png"></image>
+                    <view>返回首页</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

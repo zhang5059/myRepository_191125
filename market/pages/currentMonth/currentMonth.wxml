@@ -1,0 +1,48 @@
+<view>
+    <!-- <view class="title">搜索条件</view>
+    <view class="search">
+        <input placeholder="请输入查询条件"></input>
+        <button>搜索</button>
+    </view> -->
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+        <van-collapse-item title="请输入搜索条件" name="1">
+            <input placeholder="可根据(医院名称)或者(医生姓名)进行查询"></input>
+            <button class="searchBut">搜索</button> 
+        </van-collapse-item>
+    </van-collapse>
+    <view class="resultTitle">
+        <view>医院名称</view>
+        <view>医生姓名</view>
+        <view>科室</view>
+        <view>时间</view>
+        <view>金额</view>
+    </view>
+    <view class="result">
+        <view>广东省人民医院</view>
+        <view>刘备</view>
+        <view>骨科</view>
+        <view>19年12月22日</view>
+        <view>3000元</view>
+    </view>
+    <view class="result">
+        <view>广东省人民医</view>
+        <view>张飞</view>
+        <view>骨科</view>
+        <view>19年12月22日</view>
+        <view>3000元</view>
+    </view>
+    <view class="result">
+        <view>广东省人民医院</view>
+        <view>关羽</view>
+        <view>骨科</view>
+        <view>19年12月22日</view>
+        <view>6000元</view>
+    </view>
+    <view class="result">
+        <view>广东省人民医院</view>
+        <view>吕布</view>
+        <view>骨科</view>
+        <view>19年12月22日</view>
+        <view>5000元</view>
+    </view>
+</view>
